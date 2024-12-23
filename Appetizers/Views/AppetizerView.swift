@@ -18,16 +18,16 @@ struct AppetizerView: View {
                         .frame(width: 100, height: 100)
                     
                     VStack (alignment: .leading, spacing: 5) {
-                        Text("Title")
+                        Text("Title \(index)")
                             .font(.title2)
                             .fontWeight(.bold)
-                        Text("Price")
+                        Text("Price \(index)")
                             .fontWeight(.bold)
                     }
                     .padding()
                 }
+                .navigationTitle("🍔 Appetizer")
             }
-            .navigationTitle("🍔 Appetizer")
         }
         .tabItem {
             Label("Home", systemImage: "house")
