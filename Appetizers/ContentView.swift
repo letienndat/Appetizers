@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State public var tabViewSelection = 2
+    @State public var tabViewSelection = 0
     
     var body: some View {
         TabView (selection: $tabViewSelection) {

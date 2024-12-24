@@ -18,7 +18,7 @@ struct AccountView: View {
     
     var body: some View {
         NavigationView {
-            Form {
+            List {
                 Section("PERSONAL INFO") {
                     TextField("First name", text: $accountViewModel.user.firstName)
                         .focused($focusedTextField, equals: .firstName)
@@ -26,14 +26,14 @@ struct AccountView: View {
                             focusedTextField = .lastName
                         }
                         .submitLabel(.next)
-                    
+
                     TextField("Last name", text: $accountViewModel.user.lastName)
                         .focused($focusedTextField, equals: .lastName)
                         .onSubmit {
                             focusedTextField = .email
                         }
                         .submitLabel(.next)
-                    
+
                     TextField("Email", text: $accountViewModel.user.email)
                         .focused($focusedTextField, equals: .email)
                         .keyboardType(.emailAddress)
@@ -43,21 +43,21 @@ struct AccountView: View {
                             focusedTextField = nil
                         }
                         .submitLabel(.continue)
-                     
+
                     DatePicker(
                         "Birthday",
                         selection: $accountViewModel.user.birthDate,
                         in: Date().oneHundredTenYearsAgo...Date().eighteenYearsAgo,
                         displayedComponents: .date
                     )
-                    
+
                     Button {
                         self.accountViewModel.saveChanges()
                     } label: {
                         Text("Save Changes")
                     }
                 }
-                
+
                 Section("ADDITIONAL PREFRENCES") {
                     Toggle("Extra Napkins", isOn: $accountViewModel.user.extraNapkins)
                     Toggle("Additional Cutlery", isOn: $accountViewModel.user.frequentRefills)
