@@ -11,7 +11,7 @@ struct OrderView: View {
     var body: some View {
         Text("Hello, Order!")
             .tabItem {
-                Label("Order", systemImage: "house")
+                Label("Order", systemImage: "bag")
             }
     }
 }

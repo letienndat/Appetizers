@@ -8,13 +8,18 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State public var tabViewSelection = 2
+    
     var body: some View {
-        TabView {
+        TabView (selection: $tabViewSelection) {
             AppetizerView()
+                .tag(0)
             
             OrderView()
+                .tag(1)
             
             AccountView()
+                .tag(2)
         }
         .accentColor(.red)
     }
