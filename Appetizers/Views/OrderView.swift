@@ -53,6 +53,7 @@ struct OrderView: View {
         .tabItem {
             Label("Order", systemImage: "bag")
         }
+        .badge(orderViewModel.order.count)
     }
 }
 
