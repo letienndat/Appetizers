@@ -63,7 +63,7 @@ struct AccountView: View {
                     Toggle("Additional Cutlery", isOn: $accountViewModel.user.frequentRefills)
                 }
             }
-            .navigationTitle("🤣 Account")
+            .navigationTitle("🙆🏻‍♀️ Account")
         }
         .navigationViewStyle(.stack)
         .tabItem {

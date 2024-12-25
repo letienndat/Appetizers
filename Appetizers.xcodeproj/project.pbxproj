@@ -28,6 +28,7 @@
 		FAA3DE512D1AC7CF0017D5C3 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3DE502D1AC7CF0017D5C3 /* User.swift */; };
 		FAA3DE542D1ACD4E0017D5C3 /* Date+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3DE532D1ACD4E0017D5C3 /* Date+Ext.swift */; };
 		FAA3DE562D1AD5410017D5C3 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA3DE552D1AD5410017D5C3 /* String+Ext.swift */; };
+		FAFCE53E2D1BE4ED00B6D6E6 /* OrderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFCE53D2D1BE4ED00B6D6E6 /* OrderViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		FAA3DE502D1AC7CF0017D5C3 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FAA3DE532D1ACD4E0017D5C3 /* Date+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Ext.swift"; sourceTree = "<group>"; };
 		FAA3DE552D1AD5410017D5C3 /* String+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
+		FAFCE53D2D1BE4ED00B6D6E6 /* OrderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -135,6 +137,7 @@
 			children = (
 				FAA3DE3C2D1AA4690017D5C3 /* AppetizerViewModel.swift */,
 				FAA3DE4E2D1AC7B20017D5C3 /* AccountViewModel.swift */,
+				FAFCE53D2D1BE4ED00B6D6E6 /* OrderViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 				FAA3DE382D1AA1310017D5C3 /* APError.swift in Sources */,
 				FAA3DE3F2D1AAA650017D5C3 /* AppetizerListCell.swift in Sources */,
 				FAA3DE422D1AAC040017D5C3 /* Alert.swift in Sources */,
+				FAFCE53E2D1BE4ED00B6D6E6 /* OrderViewModel.swift in Sources */,
 				FAA3DE362D1AA04C0017D5C3 /* NetworkManager.swift in Sources */,
 				FA08CB4E2D19A7D9007DCAC4 /* AppetizersApp.swift in Sources */,
 				FAA3DE542D1ACD4E0017D5C3 /* Date+Ext.swift in Sources */,

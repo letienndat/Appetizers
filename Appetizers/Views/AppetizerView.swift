@@ -13,20 +13,16 @@ struct AppetizerView: View {
     var body: some View {
         ZStack {
             NavigationView {
-                List {
-                    ForEach(appetizerViewModel.appetizers) { appetizer in
-                        AppetizerListCell(appetizer: appetizer)
-                            .onTapGesture {
-                                self.appetizerViewModel.appetizersDetail = appetizer
-                                self.appetizerViewModel.isShowDetail = true
-                            }
-                    }
-                    .onDelete { indexSet in
-                        appetizerViewModel.appetizers.remove(atOffsets: indexSet)
-                    }
+                List (appetizerViewModel.appetizers) { appetizer in
+                    AppetizerListCell(appetizer: appetizer)
+                        .onTapGesture {
+                            self.appetizerViewModel.appetizersDetail = appetizer
+                            self.appetizerViewModel.isShowDetail = true
+                        }
                 }
                 .navigationTitle("🍔 Appetizer")
                 .disabled(appetizerViewModel.isShowDetail)
+                .listStyle(.plain)
             }
             .navigationViewStyle(.stack)
             .blur(radius: appetizerViewModel.isShowDetail ? 20 : 0)

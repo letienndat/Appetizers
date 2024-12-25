@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     @State public var tabViewSelection = 0
+    var orderViewModel = OrderViewModel()
     
     var body: some View {
         TabView (selection: $tabViewSelection) {
@@ -22,6 +23,10 @@ struct ContentView: View {
                 .tag(2)
         }
         .accentColor(.red)
+        .environmentObject(orderViewModel)
+        .onAppear {
+            self.orderViewModel.loadOrderData()
+        }
     }
 }
 
